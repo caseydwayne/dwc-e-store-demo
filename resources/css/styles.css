@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #2a6496; /* Example DWC-K Blue */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+/* add more styles that match the DWC-K website */

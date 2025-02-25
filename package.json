@@ -1,4 +1,11 @@
 {
+    "name": "dealers-warehouse-ecom-store",
+    "version": "0.0.1",
+    "description": "quick mockup to show competency",
+    "author": {
+        "name": "Casey Dwayne",
+        "email": "2025@caseydwayne.com"
+    },
     "private": true,
     "type": "module",
     "scripts": {
