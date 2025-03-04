@@ -9,8 +9,10 @@
     <img src="{{ asset('storage/dwc-logo-300-glow.png') }}" alt="Product Image" class="w-full h-48 object-cover rounded">
 
     <h4 class="text-xl font-semibold mt-4">{{ $product->name }}</h4>
-    
+
     <p class="text-gray-600 flex-grow">{{ $product->description }}</p>
+
+    <!-- Obviously I would improve UI/UX for out of stock: change Add To Cart to Notify Me or something -->
 
     <div class="text-center py-2">
         @if( $product->stock === 0 )
@@ -22,6 +24,6 @@
 
     <p class="text-red-600 font-bold mt-2">${{ $product->price }}</p>
     
-    <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 w-full">Add to Cart</button>    
+    <button data-sku="{{ $product->sku }}" class="add-to-cart mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 w-full">Add to Cart</button>    
 
 </div>

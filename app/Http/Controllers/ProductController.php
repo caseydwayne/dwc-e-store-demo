@@ -15,6 +15,26 @@ class ProductController extends Controller {
   public function show( Product $product ){
     return view( 'products.show', compact( 'product' ) );
   }
+
+  public function getProductBySku($sku)
+    {
+        // Retrieve the product by SKU
+        $product = Product::where('sku', $sku)->first();
+
+        // Check if product was found
+        if ($product) {
+            return response()->json([
+                'success' => true,
+                'product' => $product
+            ], 200);
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'Product not found'
+            ], 404);
+        }
+    }
+    
 }
 
 

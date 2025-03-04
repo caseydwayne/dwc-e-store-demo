@@ -1,3 +1,4 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' );
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -11,8 +12,8 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-
 /* General Reset and Styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,10 @@
   font-family: 'Arial', sans-serif;
 }
 
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
 
 body {
   font-family: sans-serif;
@@ -48,7 +53,6 @@ a {
   text-decoration: none;
 }
 
-@import url( 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' );
 
 .container {
         

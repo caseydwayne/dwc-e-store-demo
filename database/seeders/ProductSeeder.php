@@ -18,7 +18,8 @@ class ProductSeeder extends Seeder {
           'price' => 29.99,
           'category_id' => $hardware, 
           'image' => 'rounded_column_mount_bracket.jpg',
-          'stock' => 0,          
+          'stock' => 33,
+          'sku' => 'RCMB-01',
         ],
         [
           'name' => 'SKH26-L Timber Connectors',
@@ -27,6 +28,7 @@ class ProductSeeder extends Seeder {
           'category_id' => $hardware,
           'image' => 'skh26_l_timber_connectors.jpg',
           'stock' => 100,
+          'sku' => 'SKH26-L',
           'featured' => true,
         ],
         [
@@ -36,6 +38,7 @@ class ProductSeeder extends Seeder {
           'category_id' => $hardware,
           'image' => 'latchbolt_us_26d.jpg',
           'stock' => 3,
+          'sku' => 'LB-26D',
         ],
         [
           'name' => '2" Button Caps with 1-3/4" Screw',
@@ -44,6 +47,7 @@ class ProductSeeder extends Seeder {
           'category_id' => $fasteners,
           'image' => 'button_caps_with_screws.jpg',
           'stock' => 200,
+          'sku' => 'BCS-1000',
           'featured' => true,
         ],
         [
@@ -52,7 +56,8 @@ class ProductSeeder extends Seeder {
           'price' => 120.00,
           'category_id' => $fasteners,
           'image' => 'envision_deck_screws.jpg',
-          'stock' => 30,
+          'stock' => 0,
+          'sku' => 'EDS-WW',
         ],
       ];
   
