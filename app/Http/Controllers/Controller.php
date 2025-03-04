@@ -1,19 +1,7 @@
-<?php
+<?php 
 
-namespace App\Http\Controllers;
+use Illuminate\Routing\Controller as BaseController;
 
-use App\Models\Product;
-
-class ProductController extends Controller
-{
-    public function index()
-    {
-        $products = Product::all();
-        return view('products.index', compact('products'));
-    }
-
-    public function show(Product $product)
-    {
-        return view('products.show', compact('product'));
-    }
+class Controller extends BaseController {
+  // Common controller functionality can be added here if needed
 }

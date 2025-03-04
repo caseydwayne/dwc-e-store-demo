@@ -10,3 +10,209 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+
+/* General Reset and Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  /* background-color: #5e1c1c !important; */
+  color: #333;  
+  font-size: 16pt;
+  line-height: 1.6;
+}
+
+header, footer {
+  background-color: #2a6496; /* Example DWC-K Blue */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #2e3269;
+  text-decoration: none;
+}
+
+@import url( 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' );
+
+.container {
+        
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Adjust color as needed */
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    }
+
+    h1 {
+    font-size: 2.5rem; /* Large and bold for main titles */
+    font-weight: 700;
+    }
+
+    h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    }
+
+    h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    }
+
+    h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    }
+
+    h5 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    }
+
+    h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666; /* Slightly lighter color for less emphasis */
+    }
+
+
+    .product-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    }
+    /* add more styles that match the DWC-K website */
+
+    /* Layout */
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+
+    .header {
+    background: #00274d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+
+    .navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #004080;
+    padding: 15px;
+    }
+
+    .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+    .navbar a:hover {
+    text-decoration: underline;
+    }
+
+    /* Main Content */
+    .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    }
+
+    .product-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+    transform: scale(1.05);
+    }
+
+    .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    }
+
+    .product-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #00274d;
+    }
+
+    .product-card p {
+    font-size: 16px;
+    color: #555;
+    }
+
+    .button {
+    display: inline-block;
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    }
+
+    .button:hover {
+    background: #cc5200;
+    }
+
+    /* Footer */
+    .footer {
+    background: #00274d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    }
+
+    a { font-weight: 600; }
+
+    /* Accessibility Enhancements */
+    @media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+    }
+
+    @media (max-width: 992px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+    }
+
+    @media (max-width: 600px) {
+    .product-card {
+        width: 100%;
+    }
+    }
+
+}
