@@ -1,12 +1,16 @@
 @props([ 'product' ])
 
+@php $imagePath = 'storage/products/' . $product->image; @endphp
+@php $image = asset( $imagePath ); @endphp
+
 <!-- Product Card -->
 <div class="bg-white p-4 shadow rounded-lg flex flex-col">
 
-    {{-- <img src="{{ dwc( 'Heritage Rustic Black4_256x285.jpg' ) }}" alt="Product Image" class="w-full h-48 object-cover rounded"> --}}
-    {{-- <img src="{{ asset( 'storage/' . $product->image ) ?? asset('storage/dwc-logo-300-glow.png') }}" alt="{{ $product->name }}"> --}}
-
-    <img src="{{ asset('storage/dwc-logo-300-glow.png') }}" alt="Product Image" class="w-full h-48 object-cover rounded">
+    @if( $image )
+        <div class="w-full h-48 object-cover bg-contain bg-center bg-no-repeat" style="background-image: url({{ $image }}"></div>
+    @else    
+        <img src="{{ asset('storage/dwc-logo-300-glow.png') }}" alt="Product Image" class="w-full h-48 object-cover rounded">
+    @endif
 
     <h4 class="text-xl font-semibold mt-4">{{ $product->name }}</h4>
 
