@@ -28,7 +28,7 @@
 
     @if( $product )
       <div class="my-4">
-        <x-product-item-list-item :product="$product" :qty="$item['quantity']" />
+        <x-product-list-view :product="$product" :qty="$item['quantity']" />
       </div>
     @else
       <p>Product with SKU {{ $item['id'] }} not found.</p>
@@ -48,7 +48,7 @@
     </button>
 
     <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-      <a href="{{-- route( 'checkout.index' ) --}}" class="text-white">Checkout</a>      
+      <a href="/checkout" class="text-white">Checkout</a>      
     </button>
 
   </div>

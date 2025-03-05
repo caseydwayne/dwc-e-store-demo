@@ -2,7 +2,6 @@ import './bootstrap';
 
 // cart functionality 
 
-
 function updateCartCount(){
   fetch( '/cart/item-count' )
     .then( response => response.json() )
@@ -24,15 +23,16 @@ function addToCart( productSku ){
     body: JSON.stringify({ sku: productSku, quantity: 1 })
   })
   .then( response => response.json() )
-  .then( data => console.log( data ) )
+  .then( data => console.log( data ) )  
   .then ( updateCartCount );
 }
 
 document.addEventListener( 'DOMContentLoaded', function(){  
   document.querySelectorAll( '.add-to-cart' ).forEach( button => {
-    button.addEventListener( 'click', function(){
+    button.addEventListener( 'click', function( e ){
       let productId = this.getAttribute( 'data-sku' );
       addToCart( productId );
+      greenArrowAnimation( e.target );
     });
   });
 });
@@ -57,3 +57,25 @@ document.addEventListener( 'DOMContentLoaded', function(){
     button.addEventListener( 'click', clearCart );
   });
 });
+
+
+// pizzazz 
+
+function greenArrowAnimation( addToCartButton ){
+
+  const i = document.createElement('img');
+
+  const a = addToCartButton.nextElementSibling; // targeting invisible anchor to prevent animation quirk
+  
+  if( !a ) return;
+
+  i.src = '/storage/green-arrow-up.svg';
+  a.style.position = 'relative';
+  //i.style.transform = 'translateX( calc( 50% - 16px ) )';
+  i.classList = 'absolute w-32 bottom-0 rise-and-fade';
+  
+  a.appendChild( i );
+
+}
+
+//greenArrowAnimation( document.querySelector( '.product' ) );

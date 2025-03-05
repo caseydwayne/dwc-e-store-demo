@@ -220,3 +220,18 @@ a {
     }
 
 }
+
+@keyframes riseAndFade {
+  0% {
+    transform: translateX( calc( 50% - 16px ) ) translateY(100%);  /* Start from below */
+    opacity: 1;  /* Fully visible */
+  }
+  100% {
+    transform: translateX( calc( 50% - 16px ) ) translateY(-50px);  /* Rise up */
+    opacity: 0;  /* Fade out */
+  }
+}
+
+.rise-and-fade {
+  animation: riseAndFade .52s cubic-bezier( .38, .28, .55, .66 ) forwards;
+}
