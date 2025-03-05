@@ -48,7 +48,7 @@
     </button>
 
     <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-      <a href="/checkout" class="text-white">Checkout</a>      
+      <a href="{{ route( 'checkout.index' ) }}" class="text-white">Checkout</a>      
     </button>
 
   </div>

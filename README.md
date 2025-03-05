@@ -2,6 +2,14 @@
 
 This is a simple e-store to demonstrate my ability to use Laravel. Though I prefer Node based systems I have a long history with PHP and am no stranger to MVC frameworks. 
 
+**Live preview coming soon!**
+
+![Store Preview](img https://temp.caseydwayne.com/dwc-e-store-demo/store-preview.png "Store Preview")
+
+***Use Docker?*** 
+
+Skip the prereqs! After step 1 run ```docker compose up --build``` and visit http://localhost:8000.
+
 ## Installation Guide
 
 ### Prerequisites
