@@ -1,4 +1,4 @@
-#Laravel E-Store
+# Laravel E-Store
 
 This is a simple e-store to demonstrate my ability to use Laravel. Though I prefer Node based systems I have a long history with PHP and am no stranger to MVC frameworks. 
 
@@ -6,7 +6,7 @@ This is a simple e-store to demonstrate my ability to use Laravel. Though I pref
 
 ![Store Preview](https://temp.caseydwayne.com/dwc-e-store-demo/store-preview.png "Store Preview")
 
-###*Use Docker?*
+### *Use Docker?*
 
 ![Docker](https://www.docker.com/app/uploads/2023/08/logo-guide-logos-1.svg "Docker")
 
