@@ -9,15 +9,15 @@ Ensure your system has the following installed:
 - PHP 8.x
 - Composer
 - Laravel 10.x
-- MySQL or PostgreSQL
+- SQLite (make sure it's enabled in your php.ini)
 - Node.js & NPM (for frontend assets)
 
 ### Setup Steps
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-repo/your-laravel-project.git
-   cd your-laravel-project
+   git clone https://github.com/caseydwayne/dwc-e-store-demo
+   cd dwc-e-store-demo
    ```
 
 2. **Install dependencies:**
