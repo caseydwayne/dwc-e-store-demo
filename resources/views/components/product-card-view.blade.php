@@ -6,7 +6,7 @@
 <div class="product bg-white p-4 shadow rounded-lg flex flex-col">
 
     @if( $image )
-        <div class="w-full h-48 object-cover bg-contain bg-center bg-no-repeat" style="background-image: url({{ $image }}"></div>
+        <div class="w-full h-48 object-cover bg-contain bg-center bg-no-repeat" style="background-image: url('{{ $image }}')"></div>
     @else    
         <img src="{{ asset( 'storage/dwc-logo-300-glow.png' ) }}" alt="Product Image" class="w-full h-48 object-cover rounded">
     @endif
@@ -15,7 +15,7 @@
 
     <p class="text-gray-600 flex-grow">{{ $product->description }}</p>
 
-    <!-- Obviously I would improve UI/UX for out of stock: change Add To Cart to Notify Me or something -->
+    <!-- Obviously I would improve UI/UX for out of stock: change Add To Cart to Notify Me or something, prevent ordering more than in stock, etc. -->
 
     <div class="text-center py-2">
         @if( $product->stock === 0 )

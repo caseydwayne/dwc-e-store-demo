@@ -1,0 +1,20 @@
+# Use an official Node.js 20 image as a parent image
+FROM node:20-alpine
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm install
+
+# Copy application files (excluding vendor and node_modules)
+COPY . .
+
+# Build assets with Vite
+RUN npm run build
+
+# Clean up node modules
+RUN rm -rf node_modules
