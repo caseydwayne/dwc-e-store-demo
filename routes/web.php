@@ -5,7 +5,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ HomepageController::class, 'index' ] )->name( 'home' );
+Route::get('/', [ HomepageController::class, 'index' ] )->name( 'homepage.index' );
 
 Route::get('/test', function () {
     return view( 'test' );

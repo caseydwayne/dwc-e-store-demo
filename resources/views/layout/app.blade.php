@@ -14,7 +14,7 @@
   <body class="bg-gray-100 h-screen flex flex-col">
 
     <header class="bg-white shadow-md flex justify-between items-center">  
-      <a href="/">
+      <a href="{{ route(  'homepage.index' ) }}">
         <div class="flex items-center">
           <div class="w-32 mr-2">
             <img src="{{ asset('storage/dwc-logo-300-glow.png') }}" alt="logo" />
@@ -24,8 +24,8 @@
       </a>
       <nav>
         <ul class="flex space-x-4">        
-          <li><a href="/products" class="text-gray-700 hover:text-red-500">Products</a></li>
-          <li><a href="/cart" class="text-gray-700 hover:text-red-500" class="view-cart">Cart (<span id="cart-count">0</span>)</a></li>        
+          <li><a href="{{ route( 'products.index' ) }}" class="text-gray-700 hover:text-red-500">Products</a></li>
+          <li><a href="{{ route( 'cart.index' ) }}" class="text-gray-700 hover:text-red-500" class="view-cart">Cart (<span id="cart-count">0</span>)</a></li>        
         </ul>
       </nav>
     </header>
