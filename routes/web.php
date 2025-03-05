@@ -26,4 +26,4 @@ Route::get( '/cart/item-count', [ CartController::class, 'getCartItemCountSilent
 
 Route::get('/checkout', function () {
     return view( 'checkout.index' );
-});
+})->name( 'checkout.index' );
