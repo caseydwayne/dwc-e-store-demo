@@ -6,7 +6,7 @@
 <div class="product bg-white p-4 shadow rounded-lg flex flex-col">
 
     @if( $image )
-        <div class="w-full h-48 object-cover bg-contain bg-center bg-no-repeat" style="background-image: url({{ $image }}"></div>
+        <div class="w-full h-48 object-cover bg-contain bg-center bg-no-repeat" style="background-image: url('{{ $image }}')"></div>
     @else    
         <img src="{{ asset( 'storage/dwc-logo-300-glow.png' ) }}" alt="Product Image" class="w-full h-48 object-cover rounded">
     @endif
