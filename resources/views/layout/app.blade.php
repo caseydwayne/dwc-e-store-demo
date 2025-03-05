@@ -24,10 +24,7 @@
       <nav>
         <ul class="flex space-x-4">        
           <li><a href="/products" class="text-gray-700 hover:text-red-500">Products</a></li>
-          <li><a href="/cart" class="text-gray-700 hover:text-red-500" class="view-cart">Cart (<span id="cart-count">0</span>)</a></li>
-          <script>
-            document.addEventListener( 'DOMContentLoaded', updateCartCount );
-          </script>
+          <li><a href="/cart" class="text-gray-700 hover:text-red-500" class="view-cart">Cart (<span id="cart-count">0</span>)</a></li>        
         </ul>
       </nav>
     </header>
