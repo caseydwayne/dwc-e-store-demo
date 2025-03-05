@@ -11,7 +11,7 @@
 @if( $isEmpty )
 
   <p>Add items from the store to load your cart.</p>
-  <button class="mt-6 bg-gray-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+  <button class="mt-6 bg-gray-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
       <a href="{{ route( 'products.index' ) }}" class="text-white">Continue Shopping</a>
   </button>
 
@@ -43,7 +43,7 @@
       <a href="{{ route( 'cart.clear' ) }}" class="text-white">Clear Cart</a>
     </button>
 
-    <button class="bg-gray-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+    <button class="bg-gray-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
       <a href="{{ route( 'products.index' ) }}" class="text-white">Continue Shopping</a>
     </button>
 
