@@ -1,4 +1,4 @@
-#Laravel E-Store
+# Laravel E-Store
 
 This is a simple e-store to demonstrate my ability to use Laravel. Though I prefer Node based systems I have a long history with PHP and am no stranger to MVC frameworks. 
 
