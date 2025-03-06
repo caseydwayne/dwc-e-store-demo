@@ -28,9 +28,6 @@ COPY . .
 # Install PHP dependencies
 RUN composer install --no-interaction --no-dev --optimize-autoloader
 
-# Create storage link
-RUN php artisan storage:link
-
 # Copy environment file
 COPY .env.example .env
 

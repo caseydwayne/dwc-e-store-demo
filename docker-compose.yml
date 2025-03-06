@@ -7,9 +7,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/var/www/html
-      - ./storage:/var/www/html/storage/app/public:ro
     ports:
-      - "8000:8000"
+      - "9000:7000"
     depends_on:
       - node
     environment:
@@ -18,7 +17,7 @@ services:
       - APP_KEY=base64:qsnoEkb6xxrkq6guRObFceWSRCIsNGGFHpxtFZvP/MA=
       - DB_CONNECTION=sqlite
       - DB_DATABASE=/var/www/html/database/database.sqlite
-    command: php artisan serve --host=0.0.0.0 --port=8000
+    command: php artisan serve --host=0.0.0.0 --port=7000
 
   node:
     build:
