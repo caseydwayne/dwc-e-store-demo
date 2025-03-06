@@ -1,0 +1,1 @@
+<!-- This would be a product page, ideally loaded in a module via AJAX for better UI/UX -->

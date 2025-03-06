@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     @vite( 'resources/css/app.css' )
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="storage/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="/storage/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">    
+    <link rel="preload" href="/storage/green-arrow-up.svg" as="image">
   </head>
 
   <body class="bg-gray-100 h-screen flex flex-col">
 
     <header class="bg-white shadow-md flex justify-between items-center">  
-      <a href="{{ route(  'homepage.index' ) }}">
+      <a href="{{ route( 'home.index' ) }}">
         <div class="flex items-center">
           <div class="w-32 mr-2">
             <img src="{{ asset('storage/dwc-logo-300-glow.png') }}" alt="logo" />

@@ -2,7 +2,8 @@
 
 @php $image = asset( 'storage/products/' . $product->image ); @endphp
 
-<!-- Product Card -->
+<!-- Product card for in-store browsing -->
+
 <div class="product bg-white p-4 shadow rounded-lg flex flex-col">
 
     @if( $image )

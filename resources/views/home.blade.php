@@ -5,7 +5,7 @@
 <div class="landing-page">
 
     <p>
-        Welcome to Dealers Warehouse Company's consumer direct store. 
+        Welcome to the Dealers Warehouse consumer direct store (free sample). 
     </p>
 
     <h2 class="mt-6">Featured Products</h2>
