@@ -8,9 +8,9 @@ This is a simple e-store to demonstrate my ability to use Laravel. Though I pref
 
 ### *Use Docker?*
 
-![Docker](https://www.docker.com/app/uploads/2023/08/logo-guide-logos-1.svg "Docker")
+![Docker Logo](https://temp.caseydwayne.com/dwc-e-store-demo/docker-logo-small.png "Docker Logo")
 
-Skip the prereqs! After step 1 run ```docker compose up --build``` and visit http://localhost:8000.
+Skip the prereqs! After step 1 run ```docker compose up --build``` and visit http://localhost:9000.
 
 ## Installation Guide
 
@@ -36,25 +36,14 @@ Ensure your system has the following installed:
    npm install && npm run dev
    ```
 
-3. **Set up environment variables:**
+3. **Seed the database:**
    ```bash
-   cp .env.example .env
-   ```
-   Update the `.env` file with database and application settings.
-
-4. **Generate application key:**
-   ```bash
-   php artisan key:generate
+   php artisan migrate --seed
    ```
 
-5. **Run migrations:**
-   ```bash
-   php artisan migrate
-   ```
-
-6. **Serve the application:**
+4. **Serve the application:**
    ```bash
    php artisan serve
    ```
 
-Now, navigate to `http://127.0.0.1:8000` to access the application.
+Visit to `http://127.0.0.1:8000` to access the application.

@@ -62,7 +62,7 @@ document.addEventListener( 'DOMContentLoaded', function(){
 // pizzazz 
 
 function greenArrowAnimation( addToCartButton ){
-
+  
   const i = document.createElement('img');
 
   const a = addToCartButton.nextElementSibling; // targeting invisible anchor to prevent animation quirk
@@ -70,12 +70,10 @@ function greenArrowAnimation( addToCartButton ){
   if( !a ) return;
 
   i.src = '/storage/green-arrow-up.svg';
-  a.style.position = 'relative';
-  //i.style.transform = 'translateX( calc( 50% - 16px ) )';
-  i.classList = 'absolute w-32 bottom-0 rise-and-fade';
+  i.classList = 'green-arrow-up rise-and-fade';
   
   a.appendChild( i );
 
 }
 
-//greenArrowAnimation( document.querySelector( '.product' ) );
+// greenArrowAnimation( document.querySelector( '.product .add-to-cart' ) );

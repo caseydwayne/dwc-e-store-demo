@@ -12,19 +12,16 @@
 
   <p>Add items from the store to load your cart.</p>
   <button class="mt-6 bg-gray-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-      <a href="{{ route( 'products.index' ) }}" class="text-white">Continue Shopping</a>
+    <a href="{{ route( 'products.index' ) }}" class="text-white">Continue Shopping</a>
   </button>
 
 @else
-  
   
   <p>Please review your order to ensure accuracy.</p>
 
   @foreach( $cart as $item )
 
-    @php $product = $products[ $item['id'] ] ?? null; @endphp
-    
-    {{-- @php echo "Product: " . ( $product ?? 'None' ); @endphp --}}
+    @php $product = $products[ $item['id'] ] ?? null; @endphp    
 
     @if( $product )
       <div class="my-4">
@@ -33,6 +30,7 @@
     @else
       <p>Product with SKU {{ $item['id'] }} not found.</p>
     @endif
+
   @endforeach
 
   <p class="text-right"><b>Subtotal:</b> ${{ number_format( $subtotal, 2 ) }}</p>
@@ -54,6 +52,5 @@
   </div>
 
 @endif
-
 
 @endsection

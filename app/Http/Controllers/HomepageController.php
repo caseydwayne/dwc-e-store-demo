@@ -10,6 +10,6 @@ use Illuminate\Routing\Controller;
 class HomepageController extends Controller {
   public function index(){
     $featuredProducts = Product::where( 'featured', true )->take( 5 )->get();
-    return view( 'homepage', compact( 'featuredProducts' ) );
+    return view( 'home', compact( 'featuredProducts' ) );
   }
 }

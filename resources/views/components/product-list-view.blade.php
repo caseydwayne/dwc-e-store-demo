@@ -1,6 +1,7 @@
 @props([ 'product', 'qty' ])
 
-<!-- Product Card -->
+<!-- Product "list view" card for checkout page -->
+
 <div class="bg-white shadow rounded-lg flex items-center gap-4 border-b p-2 pr-6 last:border-0" title="{{ $product->description }}">
 
     
@@ -16,10 +17,11 @@
         
         <p class="mt-2">Quantity: {{ $qty }}</p>    
     
-    <form action="{{ route( 'cart.remove', $product->sku ) }}" method="POST">
-        @csrf
-        <button data-sku="{{ $product->sku }}" class="remove-from-cart mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Remove</button>    
-    </form>
+        <form action="{{ route( 'cart.remove', $product->sku ) }}" method="POST">
+            @csrf
+            <button data-sku="{{ $product->sku }}" class="remove-from-cart mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Remove</button>    
+        </form>
+
     </div>
 
 </div>
