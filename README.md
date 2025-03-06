@@ -2,7 +2,7 @@
 
 This is a simple e-store to demonstrate my ability to use Laravel. Though I prefer Node based systems I have a long history with PHP and am no stranger to MVC frameworks. 
 
-**Live preview coming soon!**
+**Live preview:** https://temp.caseydwayne.com/dwc-e-store-demo/public/
 
 ![Store Preview](https://temp.caseydwayne.com/dwc-e-store-demo/store-preview.png "Store Preview")
 
