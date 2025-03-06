@@ -3,7 +3,7 @@ import './bootstrap';
 // cart functionality 
 
 function updateCartCount(){
-  fetch( '/cart/item-count' )
+  fetch( 'cart/item-count' )
     .then( response => response.json() )
     .then( data => {
       document.querySelector( '#cart-count' ).textContent = data.count;
@@ -14,7 +14,7 @@ function updateCartCount(){
 updateCartCount();
 
 function addToCart( productSku ){
-  fetch( '/cart/add', {
+  fetch( 'cart/add', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ document.addEventListener( 'DOMContentLoaded', function(){
 
 
 function clearCart(){
-  fetch( '/cart/clear', {
+  fetch( 'cart/clear', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ function greenArrowAnimation( addToCartButton ){
   
   if( !a ) return;
 
-  i.src = '/storage/green-arrow-up.svg';
+  i.src = 'storage/green-arrow-up.svg';
   i.classList = 'green-arrow-up rise-and-fade';
   
   a.appendChild( i );
