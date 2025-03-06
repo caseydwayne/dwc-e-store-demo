@@ -46,4 +46,12 @@ Ensure your system has the following installed:
    php artisan serve
    ```
 
-Visit to `http://127.0.0.1:8000` to access the application.
+Visit `http://127.0.0.1:8000` to access the application.
+
+---
+
+#### Media and Encryption Key
+
+Feel free to copy .env-example to .env and set your own key (```php artisan key:generate```) before seeding the database. For the purposes of this demo I didn't feel it was necessary (and left the encryption key in .env-example). The local version uses SQLite, the server version MySQL. Use whatever you feel most comfortable. 
+
+The media can be downloaded [here](https://temp.caseydwayne.com/dwc-e-store-demo/media-assets.7z), just extract and place in /public/storage (I removed the symlink to avoid conflict between Windows and Docker/Linux).
